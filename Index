@@ -8,6 +8,13 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header>
+    <p>Rutas del Patrimonio</p>
+    <h1>RUTAS DEL PATRIMONIO CHILENO</h1>
+    <p>Fundación Memoria Viva difunde lugares y expresiones que forman parte del patrimonio natural y cultural de Chile.</p>
+  </header>
+
+  
   <h1>Evaluación Grupal</h1>
 </body>
 </html>

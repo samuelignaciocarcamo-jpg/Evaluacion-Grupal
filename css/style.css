@@ -1,0 +1,18 @@
+header h1, 
+header p:last-child {
+    text-align: center;
+}
+
+main h2 {
+    text-align: center;
+    color: #1a7a72;
+}
+
+section:first-of-type {
+    text-align: center;
+}
+
+section ul {
+    display: inline-block;
+    text-align: left;
+}
