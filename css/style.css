@@ -84,3 +84,6 @@ a {
   max-width: 100%; /* Para que sea adaptable si la pantalla es menor a 1000px */
   height: auto;
 }
+body {
+  background-color: #d1f9ba; 
+}
