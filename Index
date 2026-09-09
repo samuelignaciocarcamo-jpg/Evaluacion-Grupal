@@ -13,8 +13,37 @@
     <h1>RUTAS DEL PATRIMONIO CHILENO</h1>
     <p>Fundación Memoria Viva difunde lugares y expresiones que forman parte del patrimonio natural y cultural de Chile.</p>
   </header>
+<section>
+    <h2>Equipo responsable</h2>
+    <ul>
+        <li>Camila Soto - Coordinación</li>
+        <li>Diego Rojas - Investigación</li>
+        <li>Valentina Pérez - Archivo visual</li>
+    </ul>
+    <h2>Explora nuestras categorías</h2>
+
+    <div class="contenedor-tarjetas">
+        <div class="tarjeta natural">
+            <a href="html/natural.html">
+                <img src="img/natural.jfif" alt="Patrimonio Natural">
+                <h3>PATRIMONIO NATURAL</h3>
+                <p>Parques, reservas y paisajes protegidos</p>
+                <span class="boton-enlace">Ver categoría →</span>
+            </a>
+        </div>
+
+        <div class="tarjeta cultural">
+            <a href="html/patrimonio.html">
+                <img src="img/patrimonio.jpg" alt="Patrimonio Cultural">
+                <h3>PATRIMONIO CULTURAL</h3>
+                <p>Monumentos, oficios y tradiciones</p>
+                <span class="boton-enlace">Ver categoría →</span>
+            </a>
+        </div>
+    </div>
+</section>
 
   
-  <h1>Evaluación Grupal</h1>
+  <h1></h1>
 </body>
 </html>
