@@ -30,10 +30,8 @@ $(document).ready(function() {
             esValido = false;
         }
 
-        }
-
         if (region === "") {
-            $(".error-region").text("Por favor, selecciona una región.").show();
+            $(".error-region").show();
             esValido = false;
         }
 
@@ -43,10 +41,12 @@ $(document).ready(function() {
         }
 
         if (esValido === false) {
+
             event.preventDefault();
         } else {
+
             event.preventDefault(); 
-            $("#mensaje-exito").show();
+            $("#mensaje-exito").show(); 
             $("#formularioContacto")[0].reset(); 
         }
     });
