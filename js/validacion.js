@@ -4,7 +4,6 @@ $(document).ready(function() {
         
         var esValido = true; 
 
-        // Ocultamos todos los mensajes rojos y el mensaje de éxito al intentar enviar
         $(".text-danger").hide();
         $("#mensaje-exito").hide();
 
@@ -13,10 +12,8 @@ $(document).ready(function() {
         var region = $("#region").val();
         var sugerencia = $("#sugerencia").val().trim();
 
-        // Verificamos si el nombre contiene algún número del 0 al 9
         var tieneNumeros = /[0-9]/.test(nombre);
 
-        // Validación del nombre (vacío o con números)
         if (nombre === "") {
             $(".error-nombre").text("Por favor, ingresa tu nombre.").show();
             esValido = false;
@@ -26,7 +23,10 @@ $(document).ready(function() {
         }
 
         if (email === "") {
-            $(".error-email").show();
+            $(".error-email").text("Por favor, ingresa tu correo.").show();
+            esValido = false;
+        } else if (email.includes("@") === false) {
+            $(".error-email").text("El correo debe contener un '@'.").show();
             esValido = false;
         }
 
@@ -40,18 +40,15 @@ $(document).ready(function() {
             esValido = false;
         }
 
-        // Si hay errores, frenamos el envío
         if (esValido === false) {
             event.preventDefault();
         } else {
-            // Si todo está bien, frenamos la recarga de página para ver el mensaje verde
             event.preventDefault(); 
             $("#mensaje-exito").show();
-            $("#formularioContacto")[0].reset(); // Limpia el formulario automáticamente
+            $("#formularioContacto")[0].reset(); 
         }
     });
 
-    // Ocultar mensajes al presionar el botón Limpiar
     $("#btnLimpiar").click(function(){
         $(".text-danger").hide();
         $("#mensaje-exito").hide();
