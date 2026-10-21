@@ -30,8 +30,10 @@ $(document).ready(function() {
             esValido = false;
         }
 
+        }
+
         if (region === "") {
-            $(".error-region").show();
+            $(".error-region").text("Por favor, selecciona una región.").show();
             esValido = false;
         }
 
