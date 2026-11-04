@@ -1,0 +1,9 @@
+<ul id="lista"></ul> 
+<script>
+    fetch('datos.json')
+        .then(res => res.json())
+        .then(personas => {
+        let html = personas.map(persona => `<li>${persona.nombre} - ${persona.edad}</li>`).join('');
+        document.getElementById('lista').innerHTML = html;
+    });
+    <script>
