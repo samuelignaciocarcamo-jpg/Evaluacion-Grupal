@@ -5,34 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/icon.jpg" type="image/x-icon">
     <title>Salar de Tara</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-    <header class="encabezado-categoria">
-        <span>Ficha de patrimonio</span>
-        <div>
-            <a href="../Index.html">Inicio</a> | 
-            <a href="natural.html">Volver</a>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark barra-navegacion">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="../Index.html">Rutas del Patrimonio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../Index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="natural.html">Patrimonio Natural</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cultural.html">Patrimonio Cultural</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactos.html">Visitas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main class="contenedor-ficha">
-        <div class="foto-ficha">
-            <img src="../img/salar.jpg" alt="Salar de Tara">
+    <main class="container my-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-9">
+                <div class="tarjeta p-4 text-start">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="badge bg-success">Ficha de patrimonio</span>
+                        <a href="natural.html" class="enlace-categoria">← Volver</a>
+                    </div>
+
+                    <div class="row align-items-center g-4">
+                        <div class="col-12 col-md-5">
+                            <img src="../img/salar.jpg" class="d-block w-100 rounded shadow-sm" style="height: 240px; object-fit: cover;" alt="Salar de Tara">
+                        </div>
+
+                        <div class="col-12 col-md-7">
+                            <h1 class="h2 fw-bold mb-3" style="color: #1a7a72;">Salar de Tara</h1>
+                            <p class="mb-2"><strong>Región:</strong> Antofagasta</p>
+                            <p class="mb-2"><strong>Comuna:</strong> San Pedro de Atacama</p>
+                            <p class="mb-2"><strong>Tipo:</strong> Reserva nacional</p>
+                            <p class="mb-2"><strong>Declaración:</strong> 1996</p>
+                            <p class="mb-0"><strong>Estado:</strong> Protegido</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+                    <p class="mb-0">Ubicado en la Reserva Nacional Los Flamencos, en la Región de Antofagasta, este lugar ofrece uno de los paisajes más impresionantes del altiplano chileno. A más de 4.000 metros sobre el nivel del mar, destaca por sus monumentales formaciones rocosas esculpidas por el viento —conocidas como las Catedrales de Tara—, sus vastas lagunas habitadas por flamencos y un ecosistema único en medio del desierto más árido del mundo.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="datos-ficha">
-            <h2>Salar de Tara</h2>
-            <p><strong>Región:</strong> Antofagasta</p>
-            <p><strong>Comuna:</strong> San Pedro de Atacama</p>
-            <p><strong>Tipo:</strong> Reserva nacional</p>
-            <p><strong>Declaración:</strong> 1996</p>
-            <p><strong>Estado:</strong> Protegido</p>
-        </div>
-
-        <p>Ubicado en la Reserva Nacional Los Flamencos, en la Región de Antofagasta, este lugar ofrece uno de los paisajes más impresionantes del altiplano chileno. A más de 4.000 metros sobre el nivel del mar, destaca por sus monumentales formaciones rocosas esculpidas por el viento —conocidas como las Catedrales de Tara—, sus vastas lagunas habitadas por flamencos y un ecosistema único en medio del desierto más árido del mundo.</p>
-
     </main>
+
+    <footer class="pie-pagina text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-1">Aquiles Cárcamo, Joaquin Hernandez y Samuel Cárcamo.</p>
+            <p class="mb-0">© 2026 Fundación Memoria Viva. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
