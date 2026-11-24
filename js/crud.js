@@ -123,6 +123,11 @@ function mostrarRegistros() {
     html += '</tr></thead><tbody>';
 
     for (var i = 0; i < lista.length; i++) {
+        var comentarioTexto = lista[i].sugerencia;
+        if (comentarioTexto === "") {
+            comentarioTexto = "Sin comentarios";
+        }
+
         html += '<tr>';
         html += '<td>' + (i + 1) + '</td>';
         html += '<td>' + lista[i].nombre + '</td>';
@@ -130,7 +135,7 @@ function mostrarRegistros() {
         html += '<td>' + obtenerNombreLugar(lista[i].lugar) + '</td>';
         html += '<td>' + lista[i].fechaVisita + '</td>';
         html += '<td>' + lista[i].personas + '</td>';
-        html += '<td>' + lista[i].sugerencia + '</td>';
+        html += '<td>' + comentarioTexto + '</td>';
         html += '<td class="text-nowrap">';
         html += '<button type="button" class="btn btn-sm btn-primary me-1" onclick="editarRegistro(' + i + ')">Editar</button>';
         html += '<button type="button" class="btn btn-sm btn-danger" onclick="eliminarRegistro(' + i + ')">Eliminar</button>';

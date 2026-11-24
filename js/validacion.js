@@ -10,7 +10,6 @@ function validarFormulario() {
     var lugar = $("#lugar").val();
     var fechaVisita = $("#fechaVisita").val();
     var personas = $("#personas").val();
-    var sugerencia = $("#sugerencia").val().trim();
 
     var tieneNumeros = /[0-9]/.test(nombre);
 
@@ -42,11 +41,6 @@ function validarFormulario() {
 
     if (personas === "" || parseInt(personas) < 1) {
         $(".error-personas").text("Ingresa al menos 1 visitante.").show();
-        esValido = false;
-    }
-
-    if (sugerencia === "") {
-        $(".error-sugerencia").show();
         esValido = false;
     }
 
